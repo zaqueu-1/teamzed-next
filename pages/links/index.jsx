@@ -14,9 +14,9 @@ function index() {
             <a href="https://teamzed.com.br/planos" target="_blank" rel="noreferrer">
                 <Image className='links-card' src='/src/images/c11.png' width='450' height='210' />
             </a>
-            {/*<a href="https://teamzed.com.br" target="_blank" rel="noreferrer">
-                <Image className='links-card' src='/src/images/linkedin.png' width='300' height='300' />
-            </a>*/}
+            <a href="https://teamzed.com.br" target="_blank" rel="noreferrer">
+                <Image className='links-card' src='/src/images/c12.png' width='450' height='210' />
+            </a>
         </div>  
         </div>
     </>

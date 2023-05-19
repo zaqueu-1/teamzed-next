@@ -2,16 +2,32 @@ import { createGlobalStyle } from "styled-components";
 
 export const LinksStyle = createGlobalStyle`
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  box-sizing:border-box;
+}
+
+body {
+  background: #222;
+  overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .links-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 0;
+    padding: 4rem 0 8rem 0;
     width: 100%;
     min-width: 330px;
     background: rgb(34,34,34);
     background: linear-gradient(184deg, #222 14%, #111 86%);
-    height: 100vh;
 }
 
 .links-avatar {
@@ -39,8 +55,8 @@ export const LinksStyle = createGlobalStyle`
 }
 
 .links-container p {
-    font-size: 1.2rem;
-    margin-top: -1.2rem;
+    font-size: 1rem;
+    margin-top: .25rem;
     font-weight: 200;
     color: #EB5F28;
 }
@@ -75,8 +91,7 @@ export const LinksStyle = createGlobalStyle`
 }
 
 .links-container p {
-    font-size: 1rem;
-    margin-top: -1rem;
+    font-size: .9rem;
 }
 
 .links-avatar {

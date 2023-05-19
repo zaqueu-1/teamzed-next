@@ -2,6 +2,23 @@ import { createGlobalStyle } from "styled-components";
 
 export const PlansStyle = createGlobalStyle`
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  box-sizing:border-box;
+}
+
+body {
+  background: #222;
+  overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .plans-container {
     display: flex;
     flex-direction: column;
@@ -48,6 +65,7 @@ export const PlansStyle = createGlobalStyle`
     padding: 1rem;
     width: 600px;
     margin: 0 auto;
+    color: white;
 }
 
 .plans-info li {
