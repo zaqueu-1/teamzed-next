@@ -31,7 +31,6 @@ export const LoginStyle = createGlobalStyle`
 .login-titulo {
   font-size: 1.5rem;
   color: #e96029;
-
 }
 
 #login-form {

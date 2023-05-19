@@ -5,7 +5,7 @@ import Results from '../components/Results/Results.jsx'
 import Aside from '../components/Aside/Aside.jsx'
 import Subscribe from '../components/Subscribe/Subscribe.jsx'
 import Footer from '../components/Footer/Footer.jsx'
-import { React, useEffect, useRef } from "react"
+import { React, useEffect, useState, useRef } from "react"
 import { GlobalStyle } from "./globals.styles"
 import AOS from "aos"
 import "aos/dist/aos.css"

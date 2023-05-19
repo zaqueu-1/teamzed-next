@@ -1,16 +1,19 @@
 import Image from 'next/image'
+import { HeroStyle } from './Hero.styles'
 
 export default function Hero() {
     return (
-        <section id="teamzed"
+      <>
+      <HeroStyle />
+      <section id="teamzed"
         data-aos={"fade-down"}
         data-aos-duration={"1200"}
         >
-        <img src="/src/images/biglogo.png" class="blob" alt="TeamZed" width='30%' height='30%'/>
-        <h2 class="titulo">Consultoria Esportiva</h2>
-        <p class="paragrafo">
+        <Image src="/src/images/teamzed-logo.png" class="big-logo" alt="TeamZed" width='500' height='200'/>
+        <p>
           Suas metas são nosso desafio!
         </p>
       </section>
+      </>
     )
 }  

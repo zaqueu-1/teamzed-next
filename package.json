@@ -5,18 +5,26 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "nodemon app.js",
     "lint": "next lint"
   },
   "dependencies": {
     "@types/webfontloader": "^1.6.35",
     "aos": "^2.3.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase": "^9.15.0",
     "fs": "^0.0.1-security",
+    "mongoose": "^6.8.1",
     "next": "13.0.6",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
+    "react-firebase-hooks": "^5.1.1",
     "react-icons": "^4.7.1",
     "styled-components": "^5.3.6",
     "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

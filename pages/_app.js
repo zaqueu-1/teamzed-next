@@ -7,9 +7,6 @@ function MyApp({ Component, pageProps }) {
   <>
     <Head>
       <GlobalStyle />
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
-      </style>
     </Head>
       <Component {...pageProps} />
   </>
