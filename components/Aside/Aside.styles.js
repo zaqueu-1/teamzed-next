@@ -30,6 +30,7 @@ export const AsideStyle = createGlobalStyle`
   .aside-text {
     font-size: 1.5rem;
     max-width: 700px;
+    color: white;
   }
   
   .cel {
