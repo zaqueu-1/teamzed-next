@@ -1,5 +1,5 @@
 import React from 'react'
-import { LinksStyle } from './Links.styles'
+import { LinksStyle } from '../../styles/Links.styles'
 import Image from 'next/image'
 
 function index() {

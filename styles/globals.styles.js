@@ -24,6 +24,14 @@ html {
   scroll-behavior: smooth;
 }
 
+h2 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
 ::-webkit-scrollbar {
   width: 0.3rem;
   height: 0.3rem;

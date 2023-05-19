@@ -1,5 +1,5 @@
 import React from 'react'
-import { PlansStyle } from './Plans.styles'
+import { PlansStyle } from '../../styles/Plans.styles'
 import Image from 'next/image'
 import { BsFillCheckSquareFill } from 'react-icons/bs'
 
