@@ -4,7 +4,7 @@ export const HeaderStyle = createGlobalStyle`
 
 header {
   display: flex;
-  width: 100%;
+  width: 100vw;
   padding: .5rem 1rem;
   justify-content: space-between;
   align-items: center;

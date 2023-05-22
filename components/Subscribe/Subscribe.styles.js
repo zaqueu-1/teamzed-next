@@ -9,6 +9,8 @@ export const SubscribeStyle = createGlobalStyle`
     align-items: center;
     justify-content: flex-start;
     padding: 4rem 0;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 #subscribe-container h2 {

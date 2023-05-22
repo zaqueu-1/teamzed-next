@@ -9,15 +9,18 @@ export const AboutStyle = createGlobalStyle`
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 .about-title {
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .about-wrapper {
   margin-top: 7.5rem;
-  padding: 3rem;
+  padding: 2rem;
   width: 100vw;
   display: flex;
   flex-direction: column;

@@ -10,6 +10,8 @@ export const AsideStyle = createGlobalStyle`
     justify-content: flex-start;
     padding: 4rem 0;
     background-color: #EB5F28;
+    overflow-x: hidden;
+    width: 100vw;
   }
 
   .aside-title {
