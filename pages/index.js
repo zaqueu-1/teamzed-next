@@ -21,12 +21,10 @@ export default function Home() {
 
   const hero = useRef(null)
   const about = useRef(null)
-  const top = useRef(null)
 
   const scrollInto = (ref) => {
     if (ref === "hero") hero.current.scrollIntoView()
     else if (ref === 'about') about.current.scrollIntoView()
-    else if (ref === 'top') top.current.scrollIntoView()
   }
 
   return (
@@ -38,9 +36,7 @@ export default function Home() {
       </Head>
 
       <GlobalStyle />
-      <div ref={top}>
-        <Header scrollInto={scrollInto}/>
-      </div>
+      <Header scrollInto={scrollInto}/>
       <div ref={hero}>
         <Hero scrollInto={scrollInto}/>
       </div>

@@ -10,7 +10,7 @@ export default function Hero({scrollInto}) {
         data-aos={"fade-down"}
         data-aos-duration={"1200"}
         >
-        <Image src="/src/images/teamzed-logo.png" class="big-logo" alt="TeamZed" width='500' height='200'/>
+        <Image src="/src/images/teamzed-logo.png" autoFocus className="big-logo" alt="TeamZed" width='500' height='200'/>
         <RxDoubleArrowDown onClick={() => scrollInto('about')} className='more'/>
       </div>
       </>
