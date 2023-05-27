@@ -63,7 +63,7 @@ a {
   font-size: 1.2rem;
 }
 
-.coach h3, .logo {
+.coach h3 {
   font-size: 2rem;
 }
 

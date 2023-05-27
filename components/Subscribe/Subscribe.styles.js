@@ -15,7 +15,7 @@ export const SubscribeStyle = createGlobalStyle`
 
 #subscribe-container h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .plans-button {

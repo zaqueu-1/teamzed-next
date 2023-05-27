@@ -21,6 +21,7 @@ header {
   font-weight: bold;
   color: #e96029;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .small-link {

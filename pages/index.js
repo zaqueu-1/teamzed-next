@@ -22,8 +22,8 @@ export default function Home() {
   const aboutSection = useRef(null);
 
   const scrollToSection = (section) => {
-    if (section === "about") window.scrollTo({ top: heroSection.current.offsetTop, behavior: "smooth" });
-    if (section === "about") window.scrollTo({ top: aboutSection.current.offsetTop, behavior: "smooth" });
+    if (section === "hero") window.scrollTo({ top: heroSection.current.offsetTop, behavior: "smooth" });
+    else if (section === "about") window.scrollTo({ top: aboutSection.current.offsetTop, behavior: "smooth" });
   };
 
   return (
@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
 
       <GlobalStyle />
-      <Header />
+      <Header scrollToSection={scrollToSection}/>
       <section ref={heroSection}>
         <Hero scrollToSection={scrollToSection} />
       </section>
@@ -45,7 +45,7 @@ export default function Home() {
       <Results />
       <Aside />
       <Subscribe />
-      <Footer />
+      <Footer scrollToSection={scrollToSection}/>
     </>
   )
 }
