@@ -14,16 +14,19 @@ import Head from 'next/head'
 export default function Home() {
 
   useEffect(() => {
-    AOS.init();
-    AOS.refresh();
+    AOS.init()
+    AOS.refresh()
+    scrollInto('top')
   }, []);
 
-  const hero = useRef(null);
-  const about = useRef(null);
+  const hero = useRef(null)
+  const about = useRef(null)
+  const top = useRef(null)
 
   const scrollInto = (ref) => {
-    if (ref === "hero") hero.current.scrollIntoView();
-    else if (ref === 'about') about.current.scrollIntoView();
+    if (ref === "hero") hero.current.scrollIntoView()
+    else if (ref === 'about') about.current.scrollIntoView()
+    else if (ref === 'top') top.current.scrollIntoView()
   }
 
   return (
@@ -35,7 +38,9 @@ export default function Home() {
       </Head>
 
       <GlobalStyle />
-      <Header scrollInto={scrollInto}/>
+      <div ref={top}>
+        <Header scrollInto={scrollInto}/>
+      </div>
       <div ref={hero}>
         <Hero scrollInto={scrollInto}/>
       </div>
