@@ -18,11 +18,11 @@ export default function Home() {
     AOS.refresh();
   }, []);
 
-  const headerSection = useRef(null);
+  const heroSection = useRef(null);
   const aboutSection = useRef(null);
 
   const scrollToSection = (section) => {
-    if (section === "about") window.scrollTo({ top: headerSection.current.offsetTop, behavior: "smooth" });
+    if (section === "about") window.scrollTo({ top: heroSection.current.offsetTop, behavior: "smooth" });
     if (section === "about") window.scrollTo({ top: aboutSection.current.offsetTop, behavior: "smooth" });
   };
 
@@ -35,10 +35,10 @@ export default function Home() {
       </Head>
 
       <GlobalStyle />
-      <section ref={headerSection}>
-        <Header />
+      <Header />
+      <section ref={heroSection}>
+        <Hero scrollToSection={scrollToSection} />
       </section>
-      <Hero scrollToSection={scrollToSection} />
       <section ref={aboutSection}>
         <About />
       </section>
