@@ -8,7 +8,7 @@ export const HeroStyle = createGlobalStyle`
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 700px;
+    height: 80vh;
   }
 
   .more {
@@ -26,7 +26,6 @@ export const HeroStyle = createGlobalStyle`
   .big-logo {
       background: transparent;
       object-fit: contain;
-      height: 100%;
   }
 
   @keyframes pulse {
@@ -46,16 +45,7 @@ export const HeroStyle = createGlobalStyle`
 	}
 }
 
-  @media only screen and (max-width:899px) {
-    #teamzed {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      height: 700px;
-  }
-    
+  @media only screen and (max-width:899px) {    
     .big-logo {
         width: 80%;
     }

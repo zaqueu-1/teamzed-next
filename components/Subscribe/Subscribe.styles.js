@@ -8,9 +8,10 @@ export const SubscribeStyle = createGlobalStyle`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 12rem 0;
     overflow-x: hidden;
+    padding-top: 4rem;
     width: 100vw;
+    height: 40vh;
 }
 
 #subscribe-container h2 {
@@ -53,7 +54,6 @@ export const SubscribeStyle = createGlobalStyle`
   padding: 1rem;
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
-  animation: pulse 2s infinite;
   margin-top: 1rem;
   font-size: 1.2rem;
 }

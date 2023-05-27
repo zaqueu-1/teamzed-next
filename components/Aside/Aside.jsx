@@ -7,7 +7,7 @@ export default function Aside() {
     return (
       <>
         <AsideStyle />
-        <aside id='aside-container'>
+        <aside className='aside-container'>
           <h2 className="about-title"
               data-aos={"fade-up"}
               data-aos-duration={"900"}

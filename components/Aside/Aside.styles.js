@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const AsideStyle = createGlobalStyle`
 
-#aside-container {
+.aside-container {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@ export const AsideStyle = createGlobalStyle`
   
 
   @media only screen and (max-width:899px) {
-    #aside-container {
+    .aside-container {
     margin-top: 1rem;
   }
   

@@ -5,8 +5,8 @@ export default function Footer({scrollInto}) {
         <>
           <FooterStyle />
           <footer>
-            <h3 onClick={() => scrollInto('hero')} class="logo">#TEAMZED</h3>
-            <a className='small-link' href="#top">Voltar</a>
+            <h3 onClick={() => scrollInto('hero')} className="logo">#TEAMZED</h3>
+            <a className='small-link' href="#teamzed">Voltar</a>
           </footer>
       </>
     )

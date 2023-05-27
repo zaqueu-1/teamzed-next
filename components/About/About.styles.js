@@ -2,8 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 export const AboutStyle = createGlobalStyle`
 
-#about-container {
-  margin-top: 4rem;
+.about-container {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,8 +107,8 @@ export const AboutStyle = createGlobalStyle`
 
 @media only screen and (max-width:899px) {
 
-#about-container {
-  margin-top: 4rem;
+.about-container {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,6 +147,14 @@ export const AboutStyle = createGlobalStyle`
   gap: 2rem;
   justify-content: space-evenly;
   width: 100%;
+}
+
+.coach h3 {
+  font-size: 1.5rem;
+}
+
+.coach span {
+  font-size: 1.2rem;
 }
 
     
