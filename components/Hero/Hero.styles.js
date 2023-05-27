@@ -12,18 +12,15 @@ export const HeroStyle = createGlobalStyle`
   }
 
   .more {
-    padding: .5rem 1rem;
-    background-color: #6b6b6b;
     color: white;
-    border-radius: 8px;
-    border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
-    animation: pulse 2s infinite;
-    font-size: 1rem;
+    animation: pulse 2.5s infinite;
+    font-size: 2rem;
+    cursor: pointer;
   }
 
   .more:hover {
-    background-color: #333;
+    color: #E95E27;
   }
   
   .big-logo {
@@ -33,18 +30,18 @@ export const HeroStyle = createGlobalStyle`
 
   @keyframes pulse {
 	0% {
-		transform: scale(0.95);
-    	opacity: 0.8;
+		transform: scale(0.8);
+    opacity: 0.5;
 	}
 
-	70% {
-		transform: scale(1);
+	50% {
+		transform: scale(1.2);
     	opacity: 1;
 	}
 
 	100% {
-		transform: scale(0.95);  
-    	opacity: 0.8;
+		transform: scale(0.8);
+    opacity: 0.5;
 	}
 }
   

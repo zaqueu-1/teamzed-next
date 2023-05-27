@@ -31,11 +31,11 @@ export const SubscribeStyle = createGlobalStyle`
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.5rem;
-    animation: pulse 2s infinite;
+    transition: all 0.3s ease-in-out;
 }
 
 .plans-button:hover {
-  animation-play-state: paused;
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 899px) {

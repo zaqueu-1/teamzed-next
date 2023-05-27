@@ -23,7 +23,7 @@ export default function Home() {
 
   const scrollToSection = (section) => {
     if (section === "hero") window.scrollTo({ top: heroSection.current.offsetTop, behavior: "smooth" });
-    else if (section === "about") window.scrollTo({ top: aboutSection.current.offsetTop, behavior: "smooth" });
+    if (section === 'about') window.scrollTo({ top: aboutSection.current.offsetTop-50, behavior: "smooth" });
   };
 
   return (
@@ -37,7 +37,7 @@ export default function Home() {
       <GlobalStyle />
       <Header scrollToSection={scrollToSection}/>
       <section ref={heroSection}>
-        <Hero scrollToSection={scrollToSection} />
+        <Hero scrollToSection={scrollToSection}/>
       </section>
       <section ref={aboutSection}>
         <About />

@@ -71,11 +71,11 @@ export const AsideStyle = createGlobalStyle`
     border-radius: 8px;
     text-transform: uppercase;
     font-weight: 400;
-    animation: pulse 2s infinite;
+    transition: all 0.3s ease-in-out;
   }
 
   .li-btn:hover {
-  animation-play-state: paused;
+  transform: scale(1.05);
 }
 
   @keyframes glow {
@@ -147,7 +147,6 @@ export const AsideStyle = createGlobalStyle`
     border-radius: 8px;
     text-transform: uppercase;
     font-weight: 400;
-    animation: pulse 2s infinite;
   }
 
   
