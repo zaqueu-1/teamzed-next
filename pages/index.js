@@ -16,15 +16,16 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
+    scrollInto('hero');
   }, []);
 
-  const heroSection = useRef(null);
-  const aboutSection = useRef(null);
+  const hero = useRef(null);
+  const about = useRef(null);
 
-  const scrollToSection = (section) => {
-    if (section === "hero") window.scrollTo({ top: heroSection.current.offsetTop, behavior: "smooth" });
-    if (section === 'about') window.scrollTo({ top: aboutSection.current.offsetTop-50, behavior: "smooth" });
-  };
+  const scrollInto = (ref) => {
+    if (ref === "hero") hero.current.scrollIntoView();
+    else if (ref === 'about') about.current.scrollIntoView();
+  }
 
   return (
     <>
@@ -35,17 +36,17 @@ export default function Home() {
       </Head>
 
       <GlobalStyle />
-      <Header scrollToSection={scrollToSection}/>
-      <section ref={heroSection}>
-        <Hero scrollToSection={scrollToSection}/>
-      </section>
-      <section ref={aboutSection}>
+      <Header scrollInto={scrollInto}/>
+      <div ref={hero}>
+        <Hero scrollInto={scrollInto}/>
+      </div>
+      <div ref={about}>
         <About />
-      </section>
+      </div>
       <Results />
       <Aside />
       <Subscribe />
-      <Footer scrollToSection={scrollToSection}/>
+      <Footer scrollInto={scrollInto}/>
     </>
   )
 }
