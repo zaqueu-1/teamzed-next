@@ -8,14 +8,14 @@ export const HeroStyle = createGlobalStyle`
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
   }
 
   .more {
     color: white;
     transition: all 0.3s ease-in-out;
     animation: pulse 2.5s infinite;
-    font-size: 2rem;
+    font-size: 2.5rem;
     cursor: pointer;
   }
 
@@ -26,6 +26,7 @@ export const HeroStyle = createGlobalStyle`
   .big-logo {
       background: transparent;
       object-fit: contain;
+      height: 100%;
   }
 
   @keyframes pulse {
@@ -44,14 +45,6 @@ export const HeroStyle = createGlobalStyle`
     opacity: 0.5;
 	}
 }
-  
-  #teamzed p {
-    color: #6b6b6b;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #6b6b6b;
-    font-size: 1.5rem;
-  }
 
   @media only screen and (max-width:899px) {
     #teamzed {
@@ -59,8 +52,8 @@ export const HeroStyle = createGlobalStyle`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      height: 100vh;
+      width: 100vw;
+      height: 80vh;
   }
     
     .big-logo {

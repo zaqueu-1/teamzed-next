@@ -16,7 +16,6 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-    scrollInto('hero');
   }, []);
 
   const hero = useRef(null);
