@@ -11,7 +11,7 @@ export default function Hero({scrollInto}) {
         data-aos-duration={"1200"}
         >
         <Image src="/src/images/teamzed-logo.png" class="big-logo" alt="TeamZed" width='500' height='200'/>
-        <RxDoubleArrowDown onClick={() => scrollInto('about')} className='more'/>
+        <RxDoubleArrowDown className='more'/>
       </div>
       </>
     )

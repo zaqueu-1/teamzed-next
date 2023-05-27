@@ -5,7 +5,7 @@ export default function About() {
     return (
         <>
           <AboutStyle />
-          <section id="about-container">
+          <div id="about-container">
             <div class="about-wrapper">
               <div class="coach-container" data-aos={"fade-up"} data-aos-duration={"900"}>                    
                 <div class="coach">
@@ -48,7 +48,7 @@ export default function About() {
               </div>
             </div>
 
-          </section>
+          </div>
         </>
  
     )
