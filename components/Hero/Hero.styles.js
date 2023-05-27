@@ -8,7 +8,7 @@ export const HeroStyle = createGlobalStyle`
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 80vh;
+    height: 700px;
   }
 
   .more {
@@ -53,7 +53,7 @@ export const HeroStyle = createGlobalStyle`
       justify-content: center;
       align-items: center;
       width: 100vw;
-      height: 80vh;
+      height: 700px;
   }
     
     .big-logo {
