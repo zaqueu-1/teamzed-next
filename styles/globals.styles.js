@@ -76,14 +76,4 @@ a {
   font-size: 1.2rem;
 }
 
-.small-link {
-  font-size: 1.5rem;
-  color: #e96029;
-  transition: all 0.3s ease-in-out;
-}
-
-.small-link:hover {
-  opacity: 0.7;
-}
-
 `;
