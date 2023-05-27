@@ -12,6 +12,9 @@ header {
   top: 0;
   left: 0;
   z-index: 5;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  background-color: #111;
 }
 
 .logo {
@@ -25,7 +28,6 @@ header {
   text-decoration: none;
   transition: all 0.3s;
   font-size: 1.2rem;
-  background-color: #333;
   padding: .5rem;
   border-radius: 8px;
 }
