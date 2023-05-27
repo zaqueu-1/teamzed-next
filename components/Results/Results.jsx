@@ -4,38 +4,49 @@ import Image from 'next/image'
 export default function Results(){
     return (
       <>
-      <ResultsStyle />
-      <section id="results-container">
-        <h2 class="about-title" data-aos={"fade-up"} data-aos-delay={"200"} data-aos-duration={"900"}
-        >ACREDITAMOS EM PLANOS BEM FEITOS</h2>
-        <Image src="/src/images/corredor.svg" class="svg" width='300' height='300'/>
-        <div class="cards-container">
-          <div class="card">
-            <Image src="/src/images/diet-icone.svg" class="svg-icon" width='48' height='48'/>
-            <h4 class="titulo-card">Plano Alimentar</h4>
-            <p class="descricao-card">
-              Adaptado para SUA rotina. <br/> Seja ela como for!
-            </p>
-          </div>
-
-          <div class="card">
-            <Image src="/src/images/orient-icone.svg" class="svg-icon" width='48' height='48'/>
-            <h4 class="titulo-card">Orientações Gerais</h4>
-            <p class="descricao-card">
-              Suplementação e informações precisas pro plano correr sem erros!
-            </p>
-          </div>
+        <ResultsStyle />
+        <section id="results-container">
+          <h2 class="about-title" data-aos={"fade-up"} data-aos-delay={"200"} data-aos-duration={"900"}
+          >ACREDITAMOS EM PLANOS BEM FEITOS</h2>
           
-          <div class="card">
-            <Image src="/src/images/treino-icone.svg" class="svg-icon" width='48' height='48' />
-            <h4 class="titulo-card">Aeróbicos e Treinos</h4>
-            <p class="descricao-card">
-              Planilha de exercícios periodizada em torno de suas metas!
-            </p>
-          </div>
+          <div data-aos={"fade-left"} data-aos-delay={"200"} data-aos-duration={"1100"} className="cards-container">
 
-        </div>
-      </section>
+            <div className="cards-subwrapper">
+              <div className="card-r">
+                  <Image src="/src/images/smartp-icon.svg" className="svg-icon" width='48' height='48' />
+                  <div className="card-text-r">
+                    <h4 className="titulo-card">Praticidade</h4>
+                    <p className="descricao-card">
+                      Arquivos <i>.pdf</i> que podem ser acessados a qualquer momento.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="card-r">
+                  <Image src="/src/images/packs-icon.svg" className="svg-icon" width='48' height='48' />
+                  <div className="card-text-r">
+                    <h4 className="titulo-card">Pacotes completos</h4>
+                    <p className="descricao-card">
+                      Planos mensais, trimestrais e semestrais.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="card-r">
+                  <Image src="/src/images/money-icon.svg" className="svg-icon" width='48' height='48' />
+                  <div className="card-text-r">
+                    <h4 className="titulo-card">Pagamento fácil</h4>
+                    <p className="descricao-card">
+                      Aceitamos pix, boleto e cartões.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <Image className='devices' src='/src/images/opa.png' width='700' height='400' />
+            </div>
+
+        </section>
       </>
 
     )

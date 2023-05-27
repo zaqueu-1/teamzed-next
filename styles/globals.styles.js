@@ -55,8 +55,8 @@ a {
 }
 
 /* fonts */
-.about-title, #aside-title {
-  font-size: 2.5rem;
+.about-title, .aside-title {
+  font-size: 2rem;
 }
 
 .paragrafo, .coach span, .descricao-card {

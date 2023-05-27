@@ -3,76 +3,154 @@ import { createGlobalStyle } from "styled-components";
 export const AsideStyle = createGlobalStyle`
 
 #aside-container {
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 4rem 0;
-    background-color: #EB5F28;
-    overflow-x: hidden;
-    width: 100vw;
-  }
-
-  .aside-title {
-    font-size: 2.5rem;
+    padding: 4rem 1rem;
     background-color: #333;
-    padding: 1rem;
-    border-radius: 16px;
+    width: 100vw;
   }
   
   .aside-wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
-    padding: 0 4rem;
+    gap: 2rem;
+    margin-top: 1.5rem;
   }
 
-  .aside-text {
-    font-size: 1.5rem;
-    max-width: 700px;
+  .deps {
+    display: flex;
+    gap: 1.5rem;
+    background-color: #444;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 1.5rem 3rem;
+  }
+
+  .deps img {
+    width: 450px;
+    height: 420px;
+    border-radius: 8px;
+  }
+
+  .aside-list {
+    list-style: none;
     color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: .5rem 0;
+  }
+
+  .aside-list li {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+  }
+
+  .check-icon {
+    color: green;
+    animation: glow 2s infinite;
+  }
+
+  .li-btn {
+    background-color: #EB6029;
+    color: white;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem .5rem;
+    width: 50%;
+    margin: 2rem auto;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+    animation: pulse 2s infinite;
+  }
+
+  .li-btn:hover {
+  animation-play-state: paused;
+}
+
+  @keyframes glow {
+    0% {
+      opacity: .5;
+      }
+    50% {
+      opacity: 1;
+      }
+    100% {
+      opacity: .5;
+      }
+
   }
   
-  .cel {
-    opacity: 0.9;
-    animation: float 2s infinite;
-    width: 300px;
+
+  @media only screen and (max-width:899px) {
+    #aside-container {
+    margin-top: 1rem;
+  }
+  
+  .aside-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .deps {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .deps img {
+    width: 330px;
     height: 300px;
   }
 
-  @media only screen and (max-width:899px) {
-  #aside-container {
-    padding: 4rem 1rem;
+  .aside-list {
+    font-size: 1.1rem;
   }
 
-  .aside-title {
-    font-size: 1.5rem;
-  }
-  
-  .aside-wrapper {
+  .aside-list li {
     display: flex;
-    flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 2rem 1rem;
+    gap: .25rem;
   }
 
-  .aside-text {
+  .check-icon {
+    color: green;
     font-size: 1.2rem;
-    max-width: 700px;
-    margin-top: 1rem;
+    animation: glow 2s infinite;
   }
+
+  .li-btn {
+    background-color: #EB6029;
+    color: white;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem .5rem;
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+    animation: pulse 2s infinite;
+  }
+
   
-  .cel {
-    opacity: 0.9;
-    animation: float 2s infinite;
-    width: 250px;
-    height: 250px;
-    margin-top: 1rem;
-  }
   }
 
   `;

@@ -1,6 +1,8 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 export const PlansStyle = createGlobalStyle`
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -112,9 +114,13 @@ a {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    background-color: #EB5F28;
     width: 100%;
     padding: 4rem;
+    background-image: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: contrast(0.8);
 }
 
 .plans-types a {
@@ -131,6 +137,7 @@ a {
     height: 250px;
     transition: all 0.3s ease-in-out;
     border-top: 12px solid whitesmoke;
+    z-index: 1;
 }
 
 .plans-types a:hover {

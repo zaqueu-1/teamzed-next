@@ -20,14 +20,17 @@ header {
   font-size: 2rem;
 }
 
-#plans {
+.small-link {
   color: rgb(233, 96, 41);
   text-decoration: none;
   transition: all 0.3s;
   font-size: 1.2rem;
+  background-color: #333;
+  padding: .5rem;
+  border-radius: 8px;
 }
 
-#plans:hover {
+.small-link:hover {
   opacity: 0.6;
 }
 
@@ -37,7 +40,7 @@ header {
     font-size: 1.5rem;
   }
 
-  #plans {
+  .small-link {
     font-size: 1rem;
   }
   

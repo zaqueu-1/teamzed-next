@@ -13,11 +13,6 @@ export const AboutStyle = createGlobalStyle`
   width: 100vw;
 }
 
-.about-title {
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
 .about-wrapper {
   margin-top: 7.5rem;
   padding: 2rem;
@@ -55,13 +50,13 @@ export const AboutStyle = createGlobalStyle`
 }
 
 .avatar{
-  height: 250px;
-  width: 250px;
+  height: 180px;
+  width: 180px;
   object-fit: contain;
   transition: all 0.3s ease-in-out;
-  border-radius: 10px;
-  box-shadow:  5px 5px 0px #e96029,  /*right*/
-                -5px -5px 0px #333; /*left*/
+  border-radius: 50%;
+  box-shadow:  3px 3px 0px #e96029,  /*right*/
+                -3px -3px 0px #333; /*left*/
 }
 
 .avatar:hover {
@@ -121,11 +116,6 @@ export const AboutStyle = createGlobalStyle`
   padding: 1rem;
 }
 
-.about-title {
-    margin-bottom: 0;
-    font-size: 1.5rem;
-}
-
 .about-wrapper {
   margin-top: 7.5rem;
   padding: 3rem;
@@ -135,6 +125,11 @@ export const AboutStyle = createGlobalStyle`
   justify-content: center;
   align-items: center;
   gap: 8rem;
+}
+
+.avatar{
+  height: 140px;
+  width: 140px;
 }
 
 .coach-container {

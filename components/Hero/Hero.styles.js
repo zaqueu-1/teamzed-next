@@ -10,10 +10,24 @@ export const HeroStyle = createGlobalStyle`
     width: 100vw;
     height: 100vh;
   }
+
+  .more {
+    padding: .5rem 1rem;
+    background-color: #6b6b6b;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    animation: pulse 2s infinite;
+    font-size: 1rem;
+  }
+
+  .more:hover {
+    background-color: #333;
+  }
   
   .big-logo {
       background: transparent;
-      animation: pulse 2.5s infinite;
       object-fit: contain;
   }
 

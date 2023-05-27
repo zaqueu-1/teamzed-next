@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { HeroStyle } from './Hero.styles'
 
-export default function Hero() {
+export default function Hero({scrollToSection}) {
     return (
       <>
       <HeroStyle />
@@ -10,9 +10,9 @@ export default function Hero() {
         data-aos-duration={"1200"}
         >
         <Image src="/src/images/teamzed-logo.png" class="big-logo" alt="TeamZed" width='500' height='200'/>
-        <p>
-          Suas metas são nosso desafio!
-        </p>
+        <button className='more' onClick={() => scrollToSection('about')}>
+          SAIBA MAIS
+        </button>
       </section>
       </>
     )

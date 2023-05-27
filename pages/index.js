@@ -9,46 +9,38 @@ import { React, useEffect, useState, useRef } from "react"
 import { GlobalStyle } from "../styles/globals.styles"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import Head from 'next/head'
 
 export default function Home() {
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
 
-  const heroSection = useRef(null);
   const aboutSection = useRef(null);
-  const resultsSection = useRef(null);
-  const asideSection = useRef(null);
-  const subscribeSection = useRef(null);
 
   const scrollToSection = (section) => {
-    if (section === "hero") window.scrollTo({ top: heroSection.current.offsetTop, behavior: "smooth" });
-    else if (section === "about") window.scrollTo({ top: aboutSection.current.offsetTop, behavior: "smooth" });
-    else if (section === "results") window.scrollTo({ top: resultsSection.current.offsetTop, behavior: "smooth" });
-    else if (section === "aside") window.scrollTo({ top: asideSection.current.offsetTop, behavior: "smooth" });
-    else if (section === "subscribe") window.scrollTo({ top: subscribeSection.current.offsetTop, behavior: "smooth" });
+    if (section === "about") window.scrollTo({ top: aboutSection.current.offsetTop-150, behavior: "smooth" });
   };
 
   return (
     <>
-    <GlobalStyle />
-    <Header onGetScrollSection={scrollToSection} />
-    <Hero />
-    <section ref={heroSection}>
-      </section>
-     <section ref={aboutSection}>
+      <Head>
+        <title>#TEAMZED | Consultoria Esportiva</title>
+        <meta name="description" content="Sua meta é nosso desafio!" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <GlobalStyle />
+      <Header />
+      <Hero scrollToSection={scrollToSection} />
+      <section ref={aboutSection}>
         <About />
-       </section>
-      <section ref={resultsSection}>
-        <Results />
       </section>
-      <section ref={asideSection}>
-        <Aside />
-      </section>
-     <section ref={subscribeSection}>
-        <Subscribe />
-      </section>
+      <Results />
+      <Aside />
+      <Subscribe />
       <Footer />
     </>
   )
