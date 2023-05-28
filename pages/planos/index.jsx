@@ -1,8 +1,8 @@
 import React from 'react'
 import { PlansStyle } from '../../styles/Plans.styles'
 import Image from 'next/image'
-import { BsFillCheckSquareFill } from 'react-icons/bs'
-
+import { BsFillCheckSquareFill, BsArrowLeftCircleFill } from 'react-icons/bs'
+import Link from 'next/link'
 
 function index() {
   return (
@@ -10,8 +10,9 @@ function index() {
         <PlansStyle />
         <div className='plans-container'>
             <div className="plans-info">
+                <Link className='back-btn' href='/'><BsArrowLeftCircleFill /> Voltar</Link>
                 <Image data-aos={"fade-up"} data-aos-duration={"900"} className='teamzed-logo' src='/src/images/teamzed-logo.png' width='600' height='200' />
-                <h3 data-aos={"fade-left"} data-aos-duration={"1100"}>De forma prática, é possível começar agora mesmo, através de uma videochamada ou formulário enviado diretamente pra você pelo WhatsApp. A consultoria inclui:</h3>
+                <h3 data-aos={"fade-left"} data-aos-duration={"1100"}>É possível começar agora mesmo, através de uma videochamada ou formulário enviado para você por WhatsApp. A consultoria inclui:</h3>
                 <ul data-aos={"fade-right"} data-aos-duration={"1300"}>
                     <li>Plano alimentar alinhado com seu objetivo e rotina</li>
                     <li>Suporte e retirada de dúvidas pelo WhatsApp</li>

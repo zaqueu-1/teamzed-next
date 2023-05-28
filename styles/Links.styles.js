@@ -12,8 +12,7 @@ export const LinksStyle = createGlobalStyle`
 }
 
 body {
-  background: #222;
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -25,11 +24,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 0 8rem 0;
+    padding: 6rem 0;
     width: 100%;
     min-width: 330px;
     background: rgb(34,34,34);
     background: linear-gradient(184deg, #222 14%, #111 86%);
+    height: 100vh;
 }
 
 .links-avatar {
@@ -53,12 +53,12 @@ a {
 .links-container h1 {
     font-size: 2rem;
     color: white;
-    margin-top: .75rem;
+    margin-top: .5rem;
 }
 
 .links-container p {
     font-size: 1rem;
-    margin-top: .25rem;
+    margin-top: -.25rem;
     font-weight: 200;
     color: #EB5F28;
 }
@@ -67,17 +67,23 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     min-width: 330px;
     padding: 0 1rem;
-    margin-top: .5rem;
     gap: 1rem;
 }
 
+.links-card-w {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .links-card {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     transition: all 0.3s ease-in-out;
     filter: contrast(0.9) drop-shadow(2px 2px 0px #EB5F28);
     object-fit: contain;
@@ -85,6 +91,17 @@ a {
 
 .links-card:hover {
     transform: scale(1.03);
+}
+
+.links-footer{
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #EB5F28;
+    font-size: .9rem;
+    background-color: #111;
 }
 
 @media only screen and (max-width:899px) {

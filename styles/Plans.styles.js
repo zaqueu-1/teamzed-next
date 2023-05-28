@@ -35,7 +35,7 @@ a {
 .plans-info {
     width: 100%;
     padding: 4rem;
-    background-color: #111;
+    background-color: #222;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -46,6 +46,23 @@ a {
     object-fit: contain;
     width: 30%;
     height: 30%;
+}
+
+.back-btn {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    transform: scale(1.05);
+    color: #EB5F28;
+
 }
 
 .plans-info h3 {
@@ -65,7 +82,6 @@ a {
     align-items: flex-start;
     justify-content: center;
     padding: 1rem;
-    width: 600px;
     margin: 0 auto;
     color: white;
 }
@@ -178,7 +194,7 @@ a {
 }
 
 .plans-info ul {
-    font-size: 1rem;
+    font-size: .9rem;
     list-style: none;
     margin-top: 2rem;
     display: flex;
@@ -186,7 +202,6 @@ a {
     align-items: flex-start;
     justify-content: center;
     padding: .5rem;
-    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
